@@ -15,7 +15,7 @@ function App() {
     message: ''
   });
   const [disabled, setDisabled] = useState(false);
-  const [messageModel] = useLoader(GLTFLoader, ['/models/message.glb']);
+  const [messageModel] = useLoader(GLTFLoader, ['/message.glb']);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
